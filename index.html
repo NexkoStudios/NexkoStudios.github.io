@@ -3,80 +3,113 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nexko Studios | Soluciones Digitales</title>
+<title>Nexko Studios | Soluciones Digitales Simples</title>
 
 <style>
-body{
+*{
     margin:0;
-    font-family: Arial, sans-serif;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
     background:#0f172a;
     color:white;
+    line-height:1.6;
 }
 
 header{
     text-align:center;
-    padding:60px 20px;
+    padding:80px 20px;
     background:linear-gradient(135deg,#0f172a,#1e293b);
 }
 
 .logo{
-    width:150px;
+    width:120px;
     margin-bottom:20px;
 }
 
-header h1{
-    font-size:2.5em;
-    margin:10px 0;
+h1{
+    font-size:2.8em;
     color:#38bdf8;
 }
 
+.subtitulo{
+    margin-top:15px;
+    font-size:1.2em;
+    color:#cbd5e1;
+}
+
+.boton-principal{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 30px;
+    background:#38bdf8;
+    color:#000;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.boton-principal:hover{
+    background:#0ea5e9;
+}
+
 section{
-    padding:50px 20px;
-    max-width:1000px;
+    padding:70px 20px;
+    max-width:1100px;
     margin:auto;
 }
 
-.servicios{
+.titulo-seccion{
+    text-align:center;
+    font-size:2em;
+    margin-bottom:50px;
+    color:#38bdf8;
+}
+
+.grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
 }
 
 .card{
     background:#1e293b;
-    padding:25px;
-    border-radius:10px;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
     transition:0.3s;
 }
 
 .card:hover{
-    transform:translateY(-5px);
+    transform:translateY(-8px);
     background:#334155;
 }
 
-.boton{
-    display:inline-block;
-    padding:12px 25px;
-    background:#38bdf8;
-    color:black;
-    text-decoration:none;
-    border-radius:5px;
-    margin-top:20px;
-    font-weight:bold;
+.card h3{
+    margin-bottom:15px;
+    color:#38bdf8;
 }
 
 .contacto{
+    text-align:center;
     background:#1e293b;
-    padding:30px;
-    border-radius:10px;
-    line-height:1.8;
+    padding:40px;
+    border-radius:15px;
+}
+
+.contacto p{
+    margin:10px 0;
 }
 
 footer{
     text-align:center;
-    padding:20px;
+    padding:25px;
     background:#020617;
-    margin-top:40px;
+    color:#94a3b8;
 }
 </style>
 </head>
@@ -84,52 +117,77 @@ footer{
 <body>
 
 <header>
-    <img src="logo.png" alt="Logo Nexko Studios" class="logo">
+    <img src="logo.png" class="logo" alt="Nexko Studios Logo">
     <h1>NEXKO STUDIOS</h1>
-    <p>Optimización | Sistemas Operativos | Desarrollo Web Profesional</p>
+    <p class="subtitulo">
+        Hacemos que la tecnología sea simple para ti.
+    </p>
+    <a href="https://wa.me/59891963164" class="boton-principal">
+        Escríbenos por WhatsApp
+    </a>
 </header>
 
 <section>
-    <h2>Sobre Nosotros</h2>
-    <p>
-    En Nexko Studios ofrecemos soluciones digitales accesibles y profesionales 
-    para pequeños emprendimientos y particulares en Florida, Uruguay. 
-    Nos especializamos en optimización de equipos, instalación de sistemas 
-    operativos y desarrollo web moderno a precios económicos.
-    </p>
-</section>
+    <h2 class="titulo-seccion">¿En qué podemos ayudarte?</h2>
 
-<section>
-    <h2>Servicios</h2>
-    <div class="servicios">
+    <div class="grid">
         <div class="card">
-            <h3>⚙ Optimización de Software</h3>
-            <p>Mejoramos el rendimiento de tu PC o laptop para máxima velocidad.</p>
+            <h3>⚡ Tu computadora está lenta</h3>
+            <p>
+                La dejamos rápida y optimizada para que funcione como nueva.
+            </p>
         </div>
+
         <div class="card">
-            <h3>💻 Instalación de Sistemas</h3>
-            <p>Instalación de Windows, Linux y programas esenciales.</p>
+            <h3>💻 Necesitas instalar Windows o Linux</h3>
+            <p>
+                Instalamos el sistema operativo y todos los programas que necesitas.
+            </p>
         </div>
+
         <div class="card">
-            <h3>🌐 Desarrollo Web</h3>
-            <p>Páginas modernas y económicas para pequeños emprendimientos.</p>
+            <h3>🌐 Quieres una página web</h3>
+            <p>
+                Creamos páginas modernas y económicas para tu emprendimiento.
+            </p>
         </div>
     </div>
 </section>
 
 <section>
-    <h2>Contacto</h2>
+    <h2 class="titulo-seccion">¿Por qué elegirnos?</h2>
+
+    <div class="grid">
+        <div class="card">
+            ✅ Precios accesibles
+        </div>
+
+        <div class="card">
+            ✅ Atención clara y sin palabras complicadas
+        </div>
+
+        <div class="card">
+            ✅ Trabajo responsable y profesional
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 class="titulo-seccion">Contacto</h2>
+
     <div class="contacto">
-        📧 <strong>Email:</strong> nexko.contacto@gmail.com<br>
-        📱 <strong>Teléfono:</strong> +598 091963164<br>
-        📍 <strong>Ubicación:</strong> Florida, Ciudad de Florida, Uruguay (CP 94000)
-        <br><br>
-        <a href="https://wa.me/59891963164" class="boton">Escríbenos por WhatsApp</a>
+        <p><strong>Email:</strong> nexko.contacto@gmail.com</p>
+        <p><strong>Teléfono:</strong> +598 091 963 164</p>
+        <p><strong>Ubicación:</strong> Florida, Uruguay (CP 94000)</p>
+
+        <a href="https://wa.me/59891963164" class="boton-principal">
+            Contactar Ahora
+        </a>
     </div>
 </section>
 
 <footer>
-    <p>© 2026 Nexko Studios - Florida, Uruguay</p>
+    © 2026 Nexko Studios - Florida, Uruguay
 </footer>
 
 </body>
