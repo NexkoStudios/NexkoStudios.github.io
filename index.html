@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nexko Studios | Soluciones Digitales Simples</title>
+<title>Nexko Studios | Energía Digital</title>
 
 <style>
 *{
@@ -14,60 +14,70 @@
 
 body{
     font-family: 'Segoe UI', sans-serif;
-    background:#0f172a;
-    color:white;
+    background: radial-gradient(circle at center, #0f172a 0%, #020617 100%);
+    color:#e2e8f0;
     line-height:1.6;
 }
 
 header{
     text-align:center;
-    padding:80px 20px;
-    background:linear-gradient(135deg,#0f172a,#1e293b);
+    padding:100px 20px;
 }
 
 .logo{
-    width:120px;
-    margin-bottom:20px;
+    width:160px;
+    filter: drop-shadow(0 0 25px #00f2ff);
+    animation: glow 2.5s infinite alternate;
+}
+
+@keyframes glow {
+    from { filter: drop-shadow(0 0 15px #00f2ff); }
+    to { filter: drop-shadow(0 0 35px #00f2ff); }
 }
 
 h1{
-    font-size:2.8em;
-    color:#38bdf8;
+    font-size:3em;
+    margin-top:20px;
+    color:#00f2ff;
+    text-shadow:0 0 15px #00f2ff;
 }
 
 .subtitulo{
     margin-top:15px;
     font-size:1.2em;
-    color:#cbd5e1;
+    color:#94a3b8;
 }
 
 .boton-principal{
     display:inline-block;
-    margin-top:30px;
-    padding:15px 30px;
-    background:#38bdf8;
+    margin-top:35px;
+    padding:15px 35px;
+    background:#00f2ff;
     color:#000;
-    text-decoration:none;
     font-weight:bold;
-    border-radius:8px;
+    text-decoration:none;
+    border-radius:30px;
+    box-shadow:0 0 20px #00f2ff;
     transition:0.3s;
 }
 
 .boton-principal:hover{
-    background:#0ea5e9;
+    background:#38bdf8;
+    box-shadow:0 0 30px #00f2ff;
 }
 
 section{
-    padding:70px 20px;
+    padding:80px 20px;
     max-width:1100px;
     margin:auto;
 }
 
 .titulo-seccion{
     text-align:center;
-    font-size:2em;
-    margin-bottom:50px;
-    color:#38bdf8;
+    font-size:2.2em;
+    margin-bottom:60px;
+    color:#00f2ff;
+    text-shadow:0 0 10px #00f2ff;
 }
 
 .grid{
@@ -77,118 +87,43 @@ section{
 }
 
 .card{
-    background:#1e293b;
-    padding:30px;
-    border-radius:15px;
+    background:#0f172a;
+    padding:35px;
+    border-radius:20px;
     text-align:center;
+    border:1px solid #1e293b;
     transition:0.3s;
 }
 
 .card:hover{
-    transform:translateY(-8px);
-    background:#334155;
+    transform:translateY(-10px);
+    border:1px solid #00f2ff;
+    box-shadow:0 0 20px #00f2ff33;
 }
 
 .card h3{
     margin-bottom:15px;
-    color:#38bdf8;
+    color:#00f2ff;
 }
 
 .contacto{
     text-align:center;
-    background:#1e293b;
-    padding:40px;
-    border-radius:15px;
+    background:#0f172a;
+    padding:50px;
+    border-radius:20px;
+    border:1px solid #1e293b;
 }
 
 .contacto p{
-    margin:10px 0;
+    margin:12px 0;
 }
 
 footer{
     text-align:center;
-    padding:25px;
+    padding:30px;
     background:#020617;
-    color:#94a3b8;
+    color:#64748b;
+    margin-top:50px;
 }
 </style>
 </head>
-
-<body>
-
-<header>
-    <img src="logo.png" class="logo" alt="Nexko Studios Logo">
-    <h1>NEXKO STUDIOS</h1>
-    <p class="subtitulo">
-        Hacemos que la tecnología sea simple para ti.
-    </p>
-    <a href="https://wa.me/59891963164" class="boton-principal">
-        Escríbenos por WhatsApp
-    </a>
-</header>
-
-<section>
-    <h2 class="titulo-seccion">¿En qué podemos ayudarte?</h2>
-
-    <div class="grid">
-        <div class="card">
-            <h3>⚡ Tu computadora está lenta</h3>
-            <p>
-                La dejamos rápida y optimizada para que funcione como nueva.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>💻 Necesitas instalar Windows o Linux</h3>
-            <p>
-                Instalamos el sistema operativo y todos los programas que necesitas.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>🌐 Quieres una página web</h3>
-            <p>
-                Creamos páginas modernas y económicas para tu emprendimiento.
-            </p>
-        </div>
-    </div>
-</section>
-
-<section>
-    <h2 class="titulo-seccion">¿Por qué elegirnos?</h2>
-
-    <div class="grid">
-        <div class="card">
-            ✅ Precios accesibles
-        </div>
-
-        <div class="card">
-            ✅ Atención clara y sin palabras complicadas
-        </div>
-
-        <div class="card">
-            ✅ Trabajo responsable y profesional
-        </div>
-    </div>
-</section>
-
-<section>
-    <h2 class="titulo-seccion">Contacto</h2>
-
-    <div class="contacto">
-        <p><strong>Email:</strong> nexko.contacto@gmail.com</p>
-        <p><strong>Teléfono:</strong> +598 091 963 164</p>
-        <p><strong>Ubicación:</strong> Florida, Uruguay (CP 94000)</p>
-
-        <a href="https://wa.me/59891963164" class="boton-principal">
-            Contactar Ahora
-        </a>
-    </div>
-</section>
-
-<footer>
-    © 2026 Nexko Studios - Florida, Uruguay
-</footer>
-
-</body>
-</html>
