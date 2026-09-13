@@ -1,3 +1,4 @@
+```css
 * {
     margin: 0;
     padding: 0;
@@ -426,7 +427,7 @@ header {
 
 .contact-links {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
@@ -548,17 +549,4 @@ footer {
         gap: 10px;
     }
 }
-.skill-card,
-.project-card,
-.experience-card {
-    opacity: 0;
-    transform: translateY(25px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.skill-card.visible,
-.project-card.visible,
-.experience-card.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
+```
